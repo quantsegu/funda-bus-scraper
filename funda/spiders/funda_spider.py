@@ -7,11 +7,11 @@ from funda.items import FundaItem
 class FundaSpider(CrawlSpider):
 
     name = "funda_spider"
-    allowed_domains = ["funda.nl"]
+    allowed_domains = ["fundainbusiness.nl"]
 
     def __init__(self, place='amsterdam'):
-        self.start_urls = ["http://www.funda.nl/koop/%s/p%s/" % (place, page_number) for page_number in range(1,301)]
-        self.base_url = "http://www.funda.nl/koop/%s/" % place
+        self.start_urls = ["http://www.funda.nl/alle-bedrijfsaanbod/%s/p%s/" % (place, page_number) for page_number in range(1,301)]
+        self.base_url = "http://www.funda.nl/alle-bedrijfsaanbod/%s/" % place
         self.le1 = LinkExtractor(allow=r'%s+(huis|appartement)-\d{8}' % self.base_url)
 
     def parse(self, response):
