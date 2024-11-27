@@ -1,5 +1,5 @@
 # funda-scraper
-Scraper of the Dutch real estate website [Funda.nl](http://www.funda.nl/), written in Python Scrapy.
+Scraper of the Dutch real estate website [Fundainbusinesss.nl]([http://www.funda.nl](https://fundainbusiness.nl/)/), written in Python Scrapy.
 
 ## Basic usage
 There are two spiders: 
